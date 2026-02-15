@@ -66,17 +66,25 @@ li::marker{
   height: 60px;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.2rem
+  font-size: 1.2rem;
+  border: none
 }
 
 .btn-1 {
-  background: var(--accent-color)
+  background: var(--accent-color);
+  transition: all 0.5s ease;
 }
 
-button > span {
+.btn-1:hover{
+  scale: 1.05;
+}
+
+button > a {
   display: block;
   font-family: "Anton", sans-serif;
   letter-spacing: 1px;
+  color: var(--bg-color);
+  text-decoration: none;
 }
 
 div:has(.social-cta-wrapper){
@@ -113,10 +121,17 @@ div:has(.social-cta-wrapper){
   gap: 1rem;
 }
 
-.call-info > p:nth-child(2){
+.call-info > a:nth-child(2){
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 2.5px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.call-info > a:nth-child(2):hover{
+  color: var(--accent-color)
 }
 
 .product-image-container-wrapper{
@@ -124,13 +139,11 @@ div:has(.social-cta-wrapper){
   grid-template-columns: repeat(2, 1fr);
   gap: .7rem;
   margin-top: 2rem;
-  max-width: 90vw;
-  scale: .9;
 }
 
 .product-image-container{
-  width: 210px;
-  height: 230px;
+  width: 170px;
+  height: 190px;
   border: 10px solid var(--text-color);
   border-bottom: 30px solid var(--text-color)
 }
@@ -344,6 +357,13 @@ footer > div > div{
   font-size: 1.1rem;
 }
 
+@media screen and (min-width: 425px) {
+  .product-image-container{
+    width: 190px;
+    height: 210px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header{
     padding-left: 2rem;
@@ -356,6 +376,12 @@ footer > div > div{
 
   h1 + p{
     font-size: 1.5rem;
+  }
+
+  .product-image-container{
+    width: 330px;
+    height: 350px;
+    gap: 1.5rem
   }
 
   #about-us{
@@ -439,6 +465,43 @@ footer > div > div{
   
 }
 
+@media screen and (min-width: 1024px) {
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+  }
+
+  #perfect-for{
+    font-size : 1.5rem;
+  }
+
+  ul{
+    font-size: 1.3rem;
+  }
+
+  .btn{
+    width: 200px;
+    height: 60px;
+    font-size: 1.5rem
+  }
+  
+  .product-image-container{
+    margin-right: 2rem;
+  }
+
+  .product-image-container{
+    width: 370px;
+    height: 390px;
+    transition: all .5s ease;
+  }
+
+  .product-image-container:hover{
+    transform: scale(1.05);
+  }
+}
 
 @media screen and (min-width: 1200px) {
   #our-offerings > div > div{
@@ -453,3 +516,4 @@ footer > div > div{
     font-size: 1.5rem;
   }
 }
+
