@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="style/style.css">
   <title>Gift&apos;s Pastries & Cake Boutique</title>
 </head>
@@ -29,32 +29,38 @@
         <button class="btn btn-1"><span>BOOK NOW</span></button>
       </div>
       <div>
-        <div id="phone-1-wrapper-wrapper">
+        <div class="social-cta-wrapper">
           <div id="phone-1-wrapper">
             <img width="50" height="50" src="images/icons8-phone-50.png" alt="phone-icon" id="phone-1" />
           </div>
-          <div id="call-info">
+          <div class="call-info">
             <p id="call-for-booking">Call for Booking</p>
             <p>07014598383</p>
           </div>
         </div>
-        <div>
+        <div class="social-cta-wrapper">
           <div id="ig-1-wrapper">
             <img width="50" height="50" src="images/icons8-instagram-48.png" alt="instagram-icon" id="ig-1" />
           </div>
-          <div>
+          <div class="call-info">
             <p id="follow-us-on">Follow us on</p>
             <p>@giftspastriesandcake</p>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div class="product-image-container-wrapper">
       <!-- images go here -->
+       <div class="product-image-container"><img class="product-image product-image-1"
+        src="https://cdn1.npcdn.net/images/3ddc24f93577b66f614aa7bf3d4b4ec9_1740505603.webp?md5id=729016c738c95503023f9c7bba4cb332&new_width=1000&new_height=1000&w=1741940212&from=png"
+        alt=""></div>
+       <div class="product-image-container"><img class="product-image product-image-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRjNXVGtZIHAQUOiOUVt0RzOODhyXs6QNlfQ&s" alt=""></div>
+       <div class="product-image-container"><img class="product-image product-image-3" src="https://kikifoodies.com/wp-content/uploads/2022/10/photo-output-20-500x500.jpg" alt=""></div>
+       <div class="product-image-container"><img class="product-image product-image-4" src="https://justfantastic.com.ng/wp-content/uploads/2017/08/small-chops.png" alt=""></div>
     </div>
   </header>
   <main>
-    <section>
+    <section id="about-us">
       <h2>About Us</h2>
       <p>
         Welcome to Gift's Pastries & Cake Boutique, also known as "The Cake Cottage Cafe." We specialize in creating
@@ -68,7 +74,7 @@
         elegant wedding cakes to fun birthday treats, we've got everything you need to celebrate in style.
       </p>
     </section>
-    <section>
+    <section id="our-offerings">
       <h2>Our Offerings</h2>
       <div>
         <div>
@@ -86,32 +92,34 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="ready-to-order">
       <h2>Ready to Order?</h2>
       <p>Get in touch today to book your custom cake or plan your event catering.</p>
       <div>
-        <button class="btn btn-2">
-          <img width="50" height="50" src="/images/icons8-phone-50-yellow.png" alt="phone--v1" />
+        <a href="tel:+2347014598383">
+          <img width="30" height="30" src="./images/icons8-phone-50-yellow.png" alt="phone--v1" />
           <span>Call Now</span>
-        </button>
-        <button class="btn btn-2">
-          <img width="50" height="50" src="/images/icons8-instagram-48-yellow.png" alt="phone--v1" />
+        </a>
+        <a href="https://www.instagram.com/giftspastriesandcake">
+          <img width="40" height="40" src="./images/icons8-instagram-48-yellow.png" alt="phone--v1" />
           <span>Follow Us</span>
-        </button>
+        </a>
       </div>
     </section>
   </main>
   <footer>
     <div>
       <div>
-        <h3>Gift's Pastries & Cake Boutique</h3>
-        <p>The Cake Cottage Cafe</p>
+        <h3 id="footer-header">Gift's Pastries & Cake Boutique</h3>
+        <p id="footer-tagline">&quot;The Cake Cottage Cafe&quot;</p>
       </div>
-      <div>
-        <p><img src="/images/icons8-phone-50-yellow.png" alt="phone-icon">07014598383</p>
-        <p><img src="/images/icons8-instagram-48-yellow.png" alt="instagram-icon">@giftspastriesandcake</p>
+      <div id="footer-social">
+        <p><a href="tel:+2347014598383"><img src="images/icons8-phone-50-yellow.png" width="20" height="20" alt="phone-icon">
+          07014598383</a></p>
+        <p><a href="https://www.instagram.com/giftspastriesandcake"><img src="images/icons8-instagram-48-yellow.png" width="25"
+            height="25" alt="instagram-icon"> @giftspastriesandcake</a></p>
       </div>
-      <p>&copy; 2026 Gift's Pastries & Cake Boutique. All rights reserved.</p>
+      <p id="copy">&copy; 2026 Gift's Pastries & Cake Boutique. All rights reserved.</p>
     </div>
   </footer>
 </body>
