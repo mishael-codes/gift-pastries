@@ -898,3 +898,24 @@
         max-width: 800px;
       }
     }
+/* ── ACCESSIBILITY (A11Y) ── */
+/* Ensure all focusable elements have a clear visual indicator when navigating via keyboard */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Remove default focus outline for mouse users but keep it for keyboard users */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none;
+}
+
