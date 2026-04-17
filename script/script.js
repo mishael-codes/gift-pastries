@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal, .scrap-card, .offering-card').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal, .scrap-card, .offering-card, .gallery-item').forEach(el => observer.observe(el));
 
 // Stagger scrapbook cards
 document.querySelectorAll('.scrap-card').forEach((card, i) => {
