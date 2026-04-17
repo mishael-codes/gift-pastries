@@ -20,12 +20,32 @@ document.querySelectorAll('.scrap-card').forEach((card, i) => {
 // Handle WhatsApp Order Form Submission
 const orderForm = document.getElementById('orderForm');
 if (orderForm) {
+  const orderTypeSelect = document.getElementById('orderType');
+  const otherTypeGroup = document.getElementById('otherTypeGroup');
+  const orderTypeOther = document.getElementById('orderTypeOther');
+
+  // Toggle "Other" text input visibility
+  orderTypeSelect.addEventListener('change', function() {
+    if (this.value === 'Other') {
+      otherTypeGroup.style.display = 'block';
+      orderTypeOther.setAttribute('required', 'required');
+    } else {
+      otherTypeGroup.style.display = 'none';
+      orderTypeOther.removeAttribute('required');
+      orderTypeOther.value = '';
+    }
+  });
+
   orderForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const name = document.getElementById('orderName').value.trim();
     const number = document.getElementById('orderNumber').value.trim();
-    const type = document.getElementById('orderType').value;
+    let type = document.getElementById('orderType').value;
+    
+    if (type === 'Other') {
+      type = document.getElementById('orderTypeOther').value.trim();
+    }
 
     // You can change the phone number below
     const whatsappNumber = "2347014598383";
