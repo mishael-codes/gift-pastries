@@ -772,6 +772,60 @@
       flex-shrink: 0;
     }
 
+    .cta-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .form-group {
+      width: 100%;
+    }
+
+    .cta-form input,
+    .cta-form select {
+      width: 100%;
+      padding: 16px 20px;
+      background: var(--bg);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-form input::placeholder {
+      color: rgba(249, 192, 44, 0.5);
+    }
+
+    .cta-form input:focus,
+    .cta-form select:focus {
+      border-color: var(--white);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-form select {
+      appearance: none;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f9c02c'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 15px center;
+      background-size: 20px;
+    }
+
+    .cta-form button[type="submit"] {
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--bg-2);
