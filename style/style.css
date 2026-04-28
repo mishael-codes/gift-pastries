@@ -698,6 +698,19 @@
       color: var(--muted);
     }
 
+    .offering-card p.offering-price {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.25rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      display: inline-block;
+      background: var(--gold-dim);
+      padding: 5px 15px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
     /* ── GALLERY SECTION ── */
     .gallery-section {
       background: var(--bg-2);
